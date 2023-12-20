@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TUCK-IN</title>
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <script src="response.js" defer></script>
+    <script src="app.js" defer></script>
+    <!-- swiper css link  -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+    <script src="https://kit.fontawesome.com/3a3e121ecf.js" crossorigin="anonymous"></script>
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="style1.css">
+
+</head>
+
+<body>
+
+    <!-- header section starts  -->
+
+        <header class="header">
+        
+            <a href="http://127.0.0.1:5500/home.html" class="logo"> <img
+                    src="https://s3.ap-south-1.amazonaws.com/mytyver1.0/62483112abef2f48748787c2/image-1668349568568.png"
+                    ;height="76px" ; width="25%" ;></a>
+        
+            <nav class="navbar">
+                <div class="search-box">
+                    <form>
+                        <input type="text" name="search" id="srch" placeholder="Search">
+                        <button type="submit"><i class="fa fa-search"></i></button>
+                    </form>
+                </div>
+                <div id="close-navbar" class="fas fa-times"></div>
+                <a class="active" href="home.html">home</a>
+                <a href="courses.html">product</a>
+                <a href="about.html">about</a>
+                <a href="contact.html">contact</a>
+                <div class="wrapper">
+        
+            </nav>
+        
+            <div class="icons">
+                <div id="account-btn" class="fas fa-user"></div>
+                <div id="menu-btn" class="fas fa-bars"></div>
+        
+            </div>
+        
+        
+        </header>
+
+
+
+    <!-- account form section starts  -->
+
+    <div class="account-form">
+    
+        <div id="close-form" class="fas fa-times"></div>
+    
+        <div class="buttons">
+            <span class="btn active login-btn">login</span>
+            <span class="btn register-btn">register</span>
+        </div>
+    
+        <form class="login-form active" action="">
+            <h3>login now</h3>
+            <input type="email" placeholder="enter your email" class="box">
+            <input type="password" placeholder="enter your password" class="box">
+            <div class="flex">
+                <input type="checkbox" name="" id="remember-me">
+                <label for="remember-me">remember me</label>
+                <a href="#">forgot password?</a>
+            </div>
+            <input type="submit" value="login now" class="btn">
+        </form>
+    
+        <form class="register-form" action="">
+            <h3>register now</h3>
+            <input type="email" placeholder="enter your email" class="box">
+            <input type="password" placeholder="enter your password" class="box">
+            <input type="password" placeholder="confirm your password" class="box">
+            <input type="submit" value="register now" class="btn">
+        </form>
+    
+    </div>
+
+    <!-- account form section ends -->
+
+    <!-- header section ends -->
+
+    <section class="heading-link">
+        <h3>contact us</h3>
+        <p> <a href="home.html">home</a> / contact </p>
+    </section>
+
+    <!-- contact section starts  -->
+
+    <section class="contact">
+
+        <h1 class="heading"><span>get in touch</span> </h1>
+
+        <div class="icons-container">
+
+            <div class="icons">
+                <i class="fas fa-clock"></i>
+                <h3>opening hours :</h3>
+                <p>12:00am to 12:00pm</p>
+            </div>
+
+            <div class="icons">
+                <i class="fas fa-phone"></i>
+                <h3>phone :</h3>
+                <p>+917-999-829706</p>
+                <p>+917-909-350308</p>
+            </div>
+
+            <div class="icons">
+                <i class="fas fa-envelope"></i>
+                <h3> email : </h3>
+                <p>dwivedik334@gmail.com</p>
+                <p>sshriva90@gmail.com</p>
+            </div>
+
+            <div class="icons">
+                <i class="fas fa-map"></i>
+                <h3>Address :</h3>
+                <p>482001,Jabalpur,MP,INDIA</p>
+            </div>
+
+        </div>
+
+        <div class="row">
+
+            <div class="image">
+                <img src="data:image/jpeg;base64,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" alt="">
+            </div>
+
+            <form action="">
+                <h3>send us a message</h3>
+                <input type="text" placeholder="name" class="box">
+                <input type="email" placeholder="email" class="box">
+                <input type="number" placeholder="phone" class="box">
+                <textarea name="" class="box" placeholder="message" id="" cols="30" rows="10"></textarea>
+                <input type="submit" value="send message" class="btn">
+            </form>
+
+        </div>
+
+    </section>
+
+    <!-- contact section ends -->
+
+    <!-- faq section starts  -->
+
+    <section class="faq">
+
+        <h1 class="heading">frequently<span>asked questions</span></h1>
+
+        <div class="accordion-container">
+
+            <div class="accordion active">
+                <div class="accordion-heading">
+                    <h3>how to contact for help?</h3>
+                    <i class="fas fa-angle-down"></i>
+                </div>
+                <p class="accordion-content">
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sit consequatur molestias deserunt facere
+                    laborum doloremque fuga, quae aut. Recusandae officia quis temporibus! Magnam mollitia nostrum
+                    voluptatibus deserunt quidem. Natus, quo.
+                </p>
+            </div>
+
+            <div class="accordion">
+                <div class="accordion-heading">
+                    <h3>what is the best career in 2022?</h3>
+                    <i class="fas fa-angle-down"></i>
+                </div>
+                <p class="accordion-content">
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sit consequatur molestias deserunt facere
+                    laborum doloremque fuga, quae aut. Recusandae officia quis temporibus! Magnam mollitia nostrum
+                    voluptatibus deserunt quidem. Natus, quo.
+                </p>
+            </div>
+
+            <div class="accordion">
+                <div class="accordion-heading">
+                    <h3>how much fees for web development?</h3>
+                    <i class="fas fa-angle-down"></i>
+                </div>
+                <p class="accordion-content">
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sit consequatur molestias deserunt facere
+                    laborum doloremque fuga, quae aut. Recusandae officia quis temporibus! Magnam mollitia nostrum
+                    voluptatibus deserunt quidem. Natus, quo.
+                </p>
+            </div>
+
+            <div class="accordion">
+                <div class="accordion-heading">
+                    <h3>can I choose my own tutor?</h3>
+                    <i class="fas fa-angle-down"></i>
+                </div>
+                <p class="accordion-content">
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sit consequatur molestias deserunt facere
+                    laborum doloremque fuga, quae aut. Recusandae officia quis temporibus! Magnam mollitia nostrum
+                    voluptatibus deserunt quidem. Natus, quo.
+                </p>
+            </div>
+
+            <div class="accordion">
+                <div class="accordion-heading">
+                    <h3>what payment methods are availabe?</h3>
+                    <i class="fas fa-angle-down"></i>
+                </div>
+                <p class="accordion-content">
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sit consequatur molestias deserunt facere
+                    laborum doloremque fuga, quae aut. Recusandae officia quis temporibus! Magnam mollitia nostrum
+                    voluptatibus deserunt quidem. Natus, quo.
+                </p>
+            </div>
+
+            <div class="accordion">
+                <div class="accordion-heading">
+                    <h3>can I have free trial for a month?</h3>
+                    <i class="fas fa-angle-down"></i>
+                </div>
+                <p class="accordion-content">
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sit consequatur molestias deserunt facere
+                    laborum doloremque fuga, quae aut. Recusandae officia quis temporibus! Magnam mollitia nostrum
+                    voluptatibus deserunt quidem. Natus, quo.
+                </p>
+            </div>
+
+        </div>
+  <div class="container">
+    <div class="chat-header">
+        <div class="logo">
+            <img src="https://github.com/codewelltech/chatbot-css-js-1/blob/main/images/cwt.jpg?raw=true" alt="cwt" />
+        </div>
+        <div class="title">Let's Chat</div>
+    </div>
+    <div class="chat-body">
+    <div class="loading">
+    <div class=" circle circle-1"></div>
+    <div class=" circle circle-2"></div>
+    <div class=" circle circle-3"></div>
+    </div>
+    </div>
+    <div class="chat-input">
+    
+        <div class="input-sec">
+            <input type="text" id="txtInput" placeholder="Typ here" autofocus />
+        </div>
+        <div class="send">
+            <img src="https://raw.githubusercontent.com/codewelltech/chatbot-css-js-1/a77fbabe9f84f554ecda9475b0b3890ed4eb599c/images/send.svg" alt="send" />
+        </div>
+    </div>
+</div>
+    </section>
+
+    <!-- faq section ends -->
+
+    <!-- logo slider starts  -->
+
+    <section class="logo-container">
+        <div class="swiper logo-slider">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide"> <img src="images/partner-logo-1.png" alt=""> </div>
+                <div class="swiper-slide"> <img src="images/partner-logo-2.png" alt=""> </div>
+                <div class="swiper-slide"> <img src="images/partner-logo-3.png" alt=""> </div>
+                <div class="swiper-slide"> <img src="images/partner-logo-4.png" alt=""> </div>
+                <div class="swiper-slide"> <img src="images/partner-logo-5.png" alt=""> </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- logo slider ends -->
+
+
+
+
+
+
+
+    <!-- footer section starts  -->
+
+    <section class="footer">
+    
+        <div class="box-container">
+    
+            <div class="box">
+                <i class='fas fa-chess-queen' style='font-size:34px' space in &ensp; <h3>TUCK-IN</h3></i>
+                <p>Home-made food that gives you the taste of a restaurant.</p>
+                <div class="share">
+                    <a href="https://facebook.com/keshav.dwivedi.7587" class="fab fa-facebook-f"></a>
+                    <a href="https://twitter.com/KeshavD89245043" class="fab fa-twitter"></a>
+                    <a href="https://www.instagram.com/developer_keshav/" class="fab fa-instagram"></a>
+                    <a href="https://www.linkedin.com/in/mr-keshav-dwivedi-788726213/" class="fab fa-linkedin"></a>
+                </div>
+    
+                <a href=""><img
+                        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSnonXZiWNrp7szL_7pdkPtqeVEr7kkFIoLqUGNjgsgSHURHXJwKi68vWG6bkTZW8IqmJM&usqp=CAU"
+                        ; height="78px" ; width="35%" ;></a>
+            </div>
+    
+    
+            <div class="box">
+                <h3>quick links</h3>
+                <a href="home.html" class="link">home</a>
+                <a href="about.html" class="link">about</a>
+                <a href="courses.html" class="link">courses</a>
+                <a href="contact.html" class="link">contact</a>
+            </div>
+    
+            <div class="box">
+                <h3>useful links</h3>
+                <a href="#" class="link">help center</a>
+                <a href="#" class="link">ask questions</a>
+                <a href="#" class="link">send feedback</a>
+                <a href="#" class="link">private policy</a>
+                <a href="#" class="link">terms of use</a>
+            </div>
+    
+            <div class="box">
+                <h3>newsletter</h3>
+                <p>subscribe for latest upadates</p>
+                <form action="">
+                    <input type="email" name="" placeholder="enter your email" id="" class="email">
+                    <input type="submit" value="subscribe" class="btn">
+                </form>
+            </div>
+    
+        </div>
+    
+        <div class="credit"> created by <span>Mr.Keshav dwivedi</span> | all rights reserved! </div>
+    
+    </section>
+
+    <!-- footer section ends -->
+
+
+
+
+
+    <!-- swiper js link  -->
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+
+    <!-- custom js file link  -->
+    <script src="script1.js"></script>
+
+</body>
+
+</html>
